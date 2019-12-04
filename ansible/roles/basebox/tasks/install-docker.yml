@@ -1,0 +1,12 @@
+---
+
+- name: add repos
+  yum_repository:
+    name: docker
+    baseurl: https://download.docker.com/linux/centos/docker-ce.repo
+
+- name: install packages
+  yum:
+    update_cache: yes
+    name: "{{ DOCKER_INSTALL_YUM_PACKAGES }}"
+    state: latest

@@ -1,0 +1,14 @@
+- hosts: all
+  become: yes
+  become_user: root
+  gather_facts: false
+
+  vars:
+
+  tasks:
+    - name: foo
+      debug:
+        msg: bar
+
+  roles:
+    - basebox

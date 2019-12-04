@@ -1,0 +1,8 @@
+---
+# vars file for basebox
+
+DOCKER_INSTALL_YUM_PACKAGES:
+  - yum-utils
+  - device-mapper-persistent-data
+  - lvm2
+  - docker-ce
